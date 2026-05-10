@@ -1,0 +1,92 @@
+:root {
+    --bg: #f4f3f0;
+    --dark: #072e33;
+    --text: #5a7677;
+    --peach: #faeadd;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: var(--bg); color: var(--dark); line-height: 1.4; }
+.container { max-width: 1240px; margin: 0 auto; padding: 0 20px; }
+
+/* HEADER */
+.header { display: flex; justify-content: space-between; align-items: center; padding: 40px 0; }
+.logo { font-size: 2.2rem; font-weight: 800; letter-spacing: -1px; }
+.nav-links { display: flex; gap: 40px; }
+.nav-links a { text-decoration: none; color: var(--text); font-weight: 500; font-size: 0.95rem; }
+
+/* COMMON SECTION STYLES */
+section { margin-bottom: 140px; }
+.section-header { text-align: center; margin-bottom: 60px; }
+.label { font-size: 0.8rem; font-weight: 700; color: var(--text); text-transform: uppercase; margin-bottom: 15px; display: block; letter-spacing: 2px; }
+h1 { font-size: 3.8rem; line-height: 1.1; margin-bottom: 25px; font-weight: 800; }
+h2 { font-size: 3rem; line-height: 1.2; margin-bottom: 25px; font-weight: 800; }
+h3 { font-size: 1.8rem; margin-bottom: 15px; font-weight: 700; }
+p { color: var(--text); line-height: 1.6; margin-bottom: 25px; font-size: 1.1rem; }
+
+/* BUTTONS */
+.btn-wrapper { display: flex; justify-content: flex-start; }
+.btn { padding: 14px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 0.95rem; cursor: pointer; border: none; display: inline-block; transition: 0.3s; }
+.btn-dark { background: var(--dark); color: white; }
+.btn-white { background: white; color: var(--dark); }
+.btn-outline { border: 1.5px solid var(--dark); color: var(--dark); }
+.btn-yellow { background: #FFC145; color: black; }
+.btn-teal { background: #4FB3A5; color: white; }
+.btn-pink { background: #F7A399; color: white; }
+.btn-icon { display: flex; align-items: center; gap: 10px; width: auto; }
+.w-100 { width: 100%; text-align: center; }
+
+/* HERO & SPLIT SECTIONS */
+.hero-section { background: var(--peach); display: flex; min-height: 550px; border-radius: 48px; overflow: hidden; }
+.hero-content { flex: 1.2; padding: 80px 70px; display: flex; flex-direction: column; justify-content: center; }
+.hero-image { flex: 0.8; }
+.hero-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.split-section { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.image-side-card { border-radius: 40px; overflow: hidden; height: 500px; }
+.image-side-card img { width: 100%; height: 100%; object-fit: cover; }
+
+/* SERVICES & WELLNESS */
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.card { padding: 60px; border-radius: 32px; }
+.white-card { background: white; }
+.peach-card { background: var(--peach); }
+.dark-card { background: var(--dark); color: white; }
+.span-2 { grid-column: span 2; }
+
+.wellness-layout { display: flex; align-items: center; justify-content: space-between; gap: 60px; }
+.wellness-text { flex: 0 0 65%; }
+.wellness-img { flex: 0 0 30%; }
+.wellness-img img { width: 100%; border-radius: 20px; }
+
+/* RESOURCES (3 COLUMNS) */
+.resources-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.resource-card { text-align: left; padding: 40px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
+
+/* COMMUNITY */
+.community-layout { display: flex; align-items: center; gap: 60px; }
+.community-text { flex: 1.4; }
+.community-img { flex: 0.8; }
+.community-img img { width: 100%; border-radius: 32px; }
+
+/* FAQ */
+.faq-split { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.faq-image { width: 100%; border-radius: 32px; margin-top: 40px; }
+.faq-accordion { display: flex; flex-direction: column; gap: 15px; }
+.faq-item { background: white; padding: 25px 35px; border-radius: 16px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; cursor: pointer; }
+
+/* CONTACT (CENTERED HEADER) */
+.contact-area { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.contact-subtitle { max-width: 650px; margin-bottom: 50px; }
+.contact-card-box { background: white; width: 100%; padding: 60px; border-radius: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; text-align: left; }
+.social-icons { display: flex; gap: 15px; margin: 20px 0; font-weight: 800; }
+.line-form label { display: block; font-weight: 700; font-size: 0.85rem; margin-bottom: 5px; }
+.line-form input { width: 100%; border: none; border-bottom: 1.5px solid #eee; padding: 12px 0; outline: none; margin-bottom: 25px; font-size: 1rem; }
+
+/* FOOTER */
+.footer-layout { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 24px; }
+.footer-links-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 40px 0; }
+.footer-links-grid a { text-decoration: none; color: var(--dark); line-height: 2; font-size: 0.95rem; }
+.footer-right { display: flex; flex-direction: column; justify-content: center; padding: 60px; border-radius: 32px; }
+.copyright { opacity: 0.4; font-size: 0.9rem; margin-top: auto; }
