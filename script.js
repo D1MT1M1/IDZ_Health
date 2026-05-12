@@ -49,10 +49,10 @@ faqItems.forEach(item => {
             answer.style.transition = 'max-height 0.3s ease';
             
             const faqAnswers = {
-                0: 'Заполните форму на сайте, выберите терапевта из нашего каталога и назначьте подходящее время сеанса. Первичная консультация поможет определить ваши потребности.',
-                1: 'Да, мы предлагаем полностью онлайн-сеансы через защищённую видеоконференцию. Вы можете выбрать как онлайн, так и очные консультации.',
-                2: 'Терапия - это работа с психологическими проблемами и травмами с лицензированным специалистом. Коучинг - это личностное развитие и достижение целей. Оба подхода ценны.',
-                3: 'Ваша конфиденциальность - наш приоритет. Все данные защищены согласно закону HIPAA и используются только для вашего лечения.'
+                0: 'Fill out the form on our website, choose a therapist from our directory, and schedule a suitable appointment time. An initial consultation will help determine your needs.',
+                1: 'Yes, we offer fully online sessions via secure video conferencing. You can choose both online and in-person consultations.',
+                2: 'Therapy is working with psychological problems and traumas with a licensed professional. Coaching is about personal development and goal achievement. Both approaches are valuable.',
+                3: 'Your privacy is our priority. All data is protected under HIPAA and is only used for your treatment.'
             };
             
             const index = Array.from(faqItems).indexOf(this);
