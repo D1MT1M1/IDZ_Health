@@ -11,21 +11,21 @@
 
     <header class="header container">
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
+            <a href="#home">Home</a>
+            <a href="#how-it-works">About</a>
+            <a href="#services">Services</a>
         </div>
         <div class="logo">Solus</div>
         <div class="nav-links">
-            <a href="#">Therapists</a>
-            <a href="#">Resources</a>
-            <a href="#">Contact</a>
+            <a href="#resources">Resources</a>
+            <a href="#community">Community</a>
+            <a href="#contact">Contact</a>
         </div>
     </header>
 
     <main class="container">
         
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="hero-content">
                 <h1>Support for Your<br>Mental Well-being</h1>
                 <p>Connect with licensed therapists, counselors, and wellness coaches to support your journey.</p>
@@ -38,7 +38,7 @@
             </div>
         </section>
 
-        <section class="split-section">
+        <section class="split-section" id="how-it-works">
             <div class="text-side">
                 <span class="label">HOW IT WORKS</span>
                 <h2>We Help You<br>Prioritize Your<br>Mental Health</h2>
@@ -52,7 +52,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <div class="section-header">
                 <span class="label">SERVICES</span>
                 <h2>Your Path to Well-being</h2>
@@ -84,7 +84,7 @@
             </div>
         </section>
 
-        <section class="resources">
+        <section class="resources" id="resources">
             <div class="section-header center-text">
                 <span class="label">EXPLORE & LEARN</span>
                 <h2>Resources for Your Well-being</h2>
@@ -114,7 +114,7 @@
             </div>
         </section>
 
-        <section class="card white-card community-layout">
+        <section class="card white-card community-layout" id="community">
             <div class="community-text">
                 <span class="label">COMMUNITY</span>
                 <h2>You're Not Alone<br>on This Journey</h2>
@@ -128,7 +128,7 @@
             </div>
         </section>
 
-        <section class="faq-split">
+        <section class="faq-split" id="faq">
             <div class="faq-text">
                 <span class="label">NEED HELP?</span>
                 <h2>Frequently<br>Asked Questions</h2>
@@ -136,14 +136,26 @@
                 <img src="image/6.png" alt="FAQ Decor" class="faq-image">
             </div>
             <div class="faq-accordion">
-                <div class="faq-item"><span>How do I book a therapy session?</span> <span class="plus">+</span></div>
-                <div class="faq-item"><span>Are online sessions available?</span> <span class="plus">+</span></div>
-                <div class="faq-item"><span>Therapy vs Coaching?</span> <span class="plus">+</span></div>
-                <div class="faq-item"><span>Is my info confidential?</span> <span class="plus">+</span></div>
+                <div class="faq-item">
+                    <span>How do I book a therapy session?</span> 
+                    <span class="plus">+</span>
+                </div>
+                <div class="faq-item">
+                    <span>Are online sessions available?</span> 
+                    <span class="plus">+</span>
+                </div>
+                <div class="faq-item">
+                    <span>Therapy vs Coaching?</span> 
+                    <span class="plus">+</span>
+                </div>
+                <div class="faq-item">
+                    <span>Is my info confidential?</span> 
+                    <span class="plus">+</span>
+                </div>
             </div>
         </section>
 
-        <section class="contact-area">
+        <section class="contact-area" id="contact">
             <span class="label">GET IN TOUCH</span>
             <h2>We're Here to Support You</h2>
             <p class="contact-subtitle">Whether you have questions, need help getting started, or want to learn more — reach out anytime.</p>
@@ -191,5 +203,8 @@
         </footer>
 
     </main>
+
+    <!-- Подключение JavaScript файла -->
+    <script src="script.js"></script>
 </body>
 </html>
